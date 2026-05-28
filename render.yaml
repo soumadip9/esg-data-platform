@@ -30,6 +30,7 @@ services:
     startCommand: >
       python manage.py migrate &&
       python manage.py seed_demo &&
+      python manage.py reset_tenant globex-ind &&
       python manage.py load_samples &&
       gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2
 
