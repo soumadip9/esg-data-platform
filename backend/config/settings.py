@@ -119,6 +119,12 @@ CORS_ALLOWED_ORIGINS = [
     if origin.strip()
 ]
 
+# Render assigns unique subdomains (e.g. breathe-esg-web-ui0n.onrender.com)
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://[\w-]+\.onrender\.com$",
+    r"^http://localhost:\d+$",
+]
+
 CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL", "redis://localhost:6379/0")
 CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND", CELERY_BROKER_URL)
 CELERY_TASK_ALWAYS_EAGER = os.environ.get("CELERY_TASK_ALWAYS_EAGER", "false").lower() == "true"
