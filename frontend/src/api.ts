@@ -64,6 +64,14 @@ export interface IngestionRun {
   created_at: string;
 }
 
+export interface AuditLogEntry {
+  id: string;
+  action: string;
+  actor_name: string;
+  details: Record<string, unknown>;
+  created_at: string;
+}
+
 export interface Paginated<T> {
   count: number;
   next: string | null;
@@ -130,9 +138,14 @@ export const api = {
       body: JSON.stringify({ activity_ids: activityIds, action, flag_reason: flagReason || "" }),
     }),
 
-  editActivity: (id: string, data: Partial<Activity>) =>
+  editActivity: (id: string, data: Record<string, string | number>) =>
     request<Activity>(`/review/activities/${id}/edit/`, {
       method: "PATCH",
       body: JSON.stringify(data),
     }),
+
+  activityAuditLogs: async (id: string): Promise<AuditLogEntry[]> => {
+    const data = await request<Paginated<AuditLogEntry> | AuditLogEntry[]>(`/activities/${id}/audit/`);
+    return Array.isArray(data) ? data : data.results;
+  },
 };

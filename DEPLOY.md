@@ -24,6 +24,11 @@
 ```
 Username: analyst
 Password: demo1234
+Tenant:   Acme Corporation (has sample data)
+
+Username: analyst2
+Password: demo1234
+Tenant:   Globex Industries (empty — demonstrates tenant isolation)
 ```
 
 ## After deploy — verify

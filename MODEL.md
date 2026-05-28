@@ -28,6 +28,15 @@ Tenant
 
 Organization boundary. Every query is scoped by `tenant_id` via middleware (`TenantMiddleware`) that reads the authenticated user's tenant and sets thread-local context. This is row-level multi-tenancy — simpler than schema-per-tenant, sufficient for a prototype and common in B2B SaaS at early scale.
 
+**Demo tenants** (seeded via `python manage.py seed_demo`):
+
+| Tenant | Slug | Login | Sample data |
+|--------|------|-------|-------------|
+| Acme Corporation | `acme-corp` | `analyst` / `demo1234` | Yes — all 3 source files loaded on deploy |
+| Globex Industries | `globex-ind` | `analyst2` / `demo1234` | No — demonstrates empty tenant isolation |
+
+An analyst at Globex sees zero records; an analyst at Acme cannot query Globex data. Isolation is enforced at the ORM layer via `tenant` FK on every record and `TenantQuerysetMixin` on all API views.
+
 ### ActivityRecord
 
 The normalized unit of emissions-relevant activity. One row = one auditable fact.

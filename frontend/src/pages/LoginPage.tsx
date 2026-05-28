@@ -53,7 +53,9 @@ export default function LoginPage() {
           {error && <p className="error-msg">{error}</p>}
         </form>
         <p style={{ marginTop: "1rem", fontSize: "0.8rem", color: "var(--text-muted)" }}>
-          Demo: analyst / demo1234
+          Demo logins (password: demo1234):<br />
+          analyst — Acme Corporation<br />
+          analyst2 — Globex Industries (empty tenant)
         </p>
       </div>
     </div>
