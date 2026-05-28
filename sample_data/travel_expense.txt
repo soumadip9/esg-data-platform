@@ -1,0 +1,11 @@
+Report ID|Entry ID|Expense Type|Transaction Date|Employee Name|Employee ID|Cost Center|Vendor|Amount|Currency|Departure Airport|Arrival Airport|Distance|Distance Unit|Nights
+RPT-2025-001|E001|Airfare|01/15/2025|Sarah Chen|EMP-1042|CC-1000|United Airlines|850.00|USD|JFK|LHR|||
+RPT-2025-001|E002|Hotel|01/15/2025|Sarah Chen|EMP-1042|CC-1000|Marriott London|1200.00|USD||||3
+RPT-2025-001|E003|Ground Transport|01/18/2025|Sarah Chen|EMP-1042|CC-1000|Uber|45.00|USD|||25|mi
+RPT-2025-002|E001|Airfare|02/03/2025|Marcus Weber|EMP-2087|CC-2000|Lufthansa|620.00|EUR|FRA|MUC|||
+RPT-2025-003|E001|Airfare|02/10/2025|Lisa Park|EMP-3015|CC-3000|Delta Airlines|450.00|USD|SFO|ORD|2960|km|
+RPT-2025-003|E002|Car Rental|02/10/2025|Lisa Park|EMP-3015|CC-3000|Hertz|320.00|USD|||180|mi
+RPT-2025-004|E001|Hotel|02/20/2025|James O'Brien|EMP-4012|CC-UK01|Hilton London|890.00|GBP||||5
+RPT-2025-005|E001|Airfare|03/01/2025|Anita Sharma|EMP-1055|CC-1000|Emirates|1100.00|USD|DEL|BOM|||
+RPT-2025-005|E002|Rail|03/05/2025|Anita Sharma|EMP-1055|CC-1000|Deutsche Bahn|89.00|EUR|||450|km
+RPT-2025-006|E001|Airfare|03/12/2025|Tom Baker|EMP-5020|CC-3000|Singapore Airlines|2200.00|USD|SIN|HKG|||

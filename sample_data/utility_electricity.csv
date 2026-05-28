@@ -1,0 +1,9 @@
+Meter,Account Number,Service Address,Facility,Start Date,End Date,Usage,Units,Type,Read Type
+MTR-100234,ACC-78901,100 Industrial Blvd Frankfurt,Acme HQ — Frankfurt,2024-12-15,2025-01-14,145230,kWh,Electricity,Actual
+MTR-100234,ACC-78901,100 Industrial Blvd Frankfurt,Acme HQ — Frankfurt,2025-01-15,2025-02-13,152890,kWh,Electricity,Actual
+MTR-100235,ACC-78902,200 Factory Rd Munich,Acme Plant — Munich,2024-12-20,2025-01-19,98450,kWh,Electricity,Estimated
+MTR-100235,ACC-78902,200 Factory Rd Munich,Acme Plant — Munich,2025-01-20,2025-02-18,102300,kWh,Electricity,Actual
+MTR-100236,ACC-78903,500 Lake Shore Dr Chicago,Acme US — Chicago,2024-11-28,2025-01-02,210500,kWh,Electricity,Actual
+MTR-100236,ACC-78903,500 Lake Shore Dr Chicago,Acme US — Chicago,2025-01-03,2025-02-01,198750,kWh,Electricity,Actual
+MTR-100237,ACC-78904,10 Canary Wharf London,Acme UK — London,2025-01-01,2025-01-31,67800,kWh,Electricity,Actual
+MTR-100238,ACC-78905,100 Industrial Blvd Frankfurt,Acme HQ — Solar Array,2025-01-15,2025-02-13,-12500,kWh,Electricity,Actual
