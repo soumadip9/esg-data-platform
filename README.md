@@ -1,5 +1,7 @@
 # Breathe ESG — Emissions Data Ingestion & Review Platform
 
+**App** : https://breathe-esg-web-ui0n.onrender.com 
+
 A Django REST + React prototype for ingesting heterogeneous emissions **activity data** from enterprise clients, normalizing it into a single auditable format, and giving analysts a review workflow before data is locked for external auditors.
 
 Built for the **Breathe ESG Tech Intern Assignment**.
@@ -10,7 +12,6 @@ Built for the **Breathe ESG Tech Intern Assignment**.
 
 | | URL |
 |---|-----|
-| **App (submit this)** | https://breathe-esg-web-ui0n.onrender.com |
 | **API** | https://breathe-esg-api-v0ko.onrender.com |
 | **Health check** | https://breathe-esg-api-v0ko.onrender.com/health/ |
 | **GitHub** | https://github.com/soumadip9/esg-data-platform |
@@ -388,14 +389,7 @@ GitHub:   https://github.com/soumadip9/esg-data-platform
 Live app: https://breathe-esg-web-ui0n.onrender.com
 Login:    analyst / demo1234  (Acme — has sample data)
           analyst2 / demo1234 (Globex — tenant isolation demo)
-```
 
-**Share repo with:**
-- saurav@breatheesg.com
-- rahul@breatheesg.com
-- shivang@breatheesg.com
-
----
 
 ## Troubleshooting
 
@@ -408,17 +402,7 @@ Login:    analyst / demo1234  (Acme — has sample data)
 | No History/Edit buttons | Frontend not redeployed — Manual Deploy on `breathe-esg-web`, hard refresh |
 | Excel-edited CSV fails | Use original file from `sample_data/` without opening in Excel |
 
----
 
-## Interview Talking Points
-
-1. **Why file upload, not live APIs?** Realistic for 4-day prototype; parsers are identical whether input comes from file or API.
-2. **Why no CO₂ calculator?** Assignment says ingestion is the hard part; toy numbers would be misleading.
-3. **Why flag instead of reject?** Analysts need to see everything; only parse failures go to error log.
-4. **Why two tenants?** Proves row-level isolation works — Globex sees zero Acme data.
-5. **Why audit log in UI?** Auditors and analysts need to see who changed what before sign-off.
-
----
 
 ## License
 
